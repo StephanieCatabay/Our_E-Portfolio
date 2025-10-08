@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    main {
+      background: #ffd633;
+      height: 400px;
+      padding: 30px;
+    }
+
+    .welcome-section,
+    .Home {
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .welcome-section h1 {
+      font-family: "Sunborn", serif;
+      font-size: 15vw;
+      color: #e0b638;
+      margin: 0;
+    }
+
+    .welcome-section h2 {
+      font-family: "Comic Sans MS", cursive;
+      font-size: 7vw;
+      color: #e0b638;
+      margin: 10px 0;
+    }
+
+    .welcome-section h3 {
+      font-family: Georgia, serif;
+      font-size: 5vw;
+      margin: 10px 0 30px;
+      color: #e0b638;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .home-card {
+      background-image: url(BG2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      max-width: 450px;
+      height: 550px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: -550px;
+    }
+
+    .home-card2 {
+      background-image: url(BG1.png);
+      background-repeat: no-repeat;
+      text-align: center;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      height: 600px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .home-card3 {
+      text-align: center;
+      color: white;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .Home h3 {
+      font-size: 50px;
+      font-family: sans-serif;
+    }
+
+    .Home p {
+      font-size: 36px;
+      font-family: "Lora";
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      max-width: 20%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.9;
+    }
+
+    .button {
+      margin-top: 10px;
+      background: #ffcc00;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .image-gallery button:hover {
+      background: #ffaa00;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+
+      .header-text h4 {
+        font-size: 20px
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .home-card {
+        max-width: 90%;
+        width: fit-content;
+      }
+
+      .home-card2 {
+        max-width: 100%;
+        margin-top: 150px;
+      }
+
+      .home-card3 {
+        max-width: 100%;
+      }
+
+      .Home p {
+        font-size: 32px;
+      }
+
+      .image-gallery img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+      <img src="Inerangan ES.png" alt="Right Logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="our_team.html">Our Team</a>
+    <a href="annotations.html">Annotations</a>
+    <a href="worksheet.html">Worksheets</a>
+    <a href="reflections.html">Reflections</a>
+  </nav>
+
+  <section class="welcome-section">
+    <h1>WELCOME</h1>
+    <h2>WE ARE THE FUTURE EDUCATORS!</h2> <br><br>
+    <h3>Field Study 1</h3>
+  </section>
+  <section class="Home">
+    <div class="home-grid">
+      <div class="home-card2">
+        <h3>VISION</h3>
+        <div class="home-card" style="margin-top: 50px;">
+          <p>KAISA envisions a community of future educators who work together in unity and compassion to create a positive and meaningful learning environment for every learner at Inerangan Elementary School.</P>
+        </div>
+      </div>
+
+      <div class="home-card2">
+        <h3>MISSION</h3>
+        <div class="home-card" style="margin-top: 50px;">
+          <p>KAISA commits to promote teamwork, dedication, and excellence among practice teachers by supporting one another in teaching, learning, and serving the school community. The group aims to inspire young learners through quality instruction, cooperation, and shared values.</p>
+        </div>
+      </div>
+      <div class="home-card2">
+        <h3>PURPOSE</h3>
+        <div class="home-card" style="margin-top: 50px;">
+          <p>The purpose of KAISA is to strengthen the bond among practice teachers and to work hand in hand in achieving the goals of effective teaching, character development, and community involvement. The group seeks to uphold the spirit of unity—kaisa—in every activity and responsibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Home">
+    <div class="home-grid">
+      <div class="home-card3">
+        <h3>KAISA <br>
+          (Ilocano word meaning “together” or “united”)
+        </h3>
+      </div>
+    </div>
+  </section>
+  <section class="Home">
+    <div class="image-gallery">
+        <img src="Group_Pic2.jpg" alt="Pig 1">
+        <img src="Group_Pic.png" alt="Pig 2">
+        <img src="Inerangan.png" alt="Pig 4">
+        <img src="Stephanie.jpg" alt="Pig 3">
+    </div>
+    <button class="button"><a href="our_team.html" style="text-decoration: none;">Click Here To See Our Info's</a></button>
+  </section>
+
+</body>
+</html>

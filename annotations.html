@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    .annotation-section {
+      background: #3f51b5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .annotation-section h2 {
+      color: white;
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .annotation {
+      padding: 40px 20px;
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .annotation h3 {
+      font-size: 48px;
+      font-family: "Garamond Bold";
+    }
+
+    .annotation p {
+      font-size: 30px;
+      font-family: "Palatino Linotype";
+    }
+
+    .annotation-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .annotation-card {
+      background-image: url(BG4.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      gap: 20px;
+      justify-content: center;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+      height: 550px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .annotation-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      header img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+
+      .header-text h4 {
+        font-size: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      .annotation-section h2 {
+        font-size: 32px;
+      }
+
+      .annotation-card {
+        max-width: 100%;
+        height: 100%;
+        padding: 15px;
+      }
+
+      .annotation h3 {
+        font-size: 24px;
+      }
+
+      .annotation p {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+      <img src="Inerangan ES.png" alt="Right Logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="our_team.html">Our Team</a>
+    <a href="annotations.html" class="active">Annotations</a>
+    <a href="worksheet.html">Worksheets</a>
+    <a href="reflections.html">Reflections</a>
+  </nav>
+  
+  <section class="annotation-section">
+    <h2>Annotations</h2>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card"  style="height: 700px;">
+        <h3>ACTIVITY 1</h3>
+        <p>
+          The first activity highlights the importance of pedagogical content knowledge (PCK) for successful teaching. It points out that teachers must not only have a deep grasp of their subject matter but also understand how it connects to other areas of the curriculum. To create lessons that are meaningful and support cognitive development, it is essential to select topics that are appropriate for the students' developmental stage. Teachers are encouraged to thoroughly understand the lesson content and apply learning theories to make their instruction more effective and efficient. By combining their knowledge of the subject with sound teaching strategies, educators can create engaging and impactful learning experiences. These experiences help students gain a stronger understanding and better retain knowledge across various subjects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card">
+        <h3>ACTIVITY 2</h3>
+        <p>
+          This activity emphasizes the importance of creating a safe, clean, and organized learning environment that supports students’ focus and growth. It highlights how classroom management strategies like setting clear rules, maintaining discipline, and encouraging positive behavior help make the classroom more conducive to learning. It also stresses that school facilities and surroundings play a big role in students’ learning and development. 
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card">
+        <h3>ACTIVITY 3</h3>
+        <p>
+          The activity emphasizes the importance of understanding and respecting the diversity of learners in the classroom. It focuses on how each student is unique in terms of abilities, behavior, interests, and learning styles. The activity highlights the teacher’s role in creating an inclusive and supportive learning environment where all students can participate and learn at their own pace. It also stresses the need for using different teaching strategies to meet the varied needs of learners and promote cooperation, respect, and equality among them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card">
+        <h3>ACTIVITY 4</h3>
+        <p>
+          This activity demonstrates the pre-service teacher’s ability to plan, manage, and implement developmentally sequenced teaching and learning processes that align with curriculum requirements. It shows how lessons are organized from simple to complex, ensuring that students build understanding step by step. The use of varied instructional strategies and both ICT and traditional resources reflects adaptability to different teaching contexts. Overall, this activity highlights the importance of thoughtful planning and flexible implementation in achieving meaningful and effective learning outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card">
+        <h3>ACTIVITY 5</h3>
+        <p>
+          This activity provided me with a deeper understanding of how assessment serves as a bridge between teaching and learning. I observed that effective teachers use a variety of assessment tools both traditional and authentic to measure learners’ progress and provide meaningful feedback. It emphasized the importance of aligning assessment with learning objectives and using results to improve instruction and support students’ diverse learning needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="annotation">
+    <div class="annotation-grid">
+      <div class="annotation-card" style="height: 600px;">
+        <h3>ACTIVITY 6</h3>
+        <p>
+          The last activity emphasize how important for the teacher to build a strong connections with the community and continuously develop both personal and professionally.  Because as teacher,we need to build a trust and to collaboration with students,colleagues and families in community to have a supportive environment and enhance students learning and growth. It points out that as a teacher, its not just about teaching a lesson but we need to be a role models to our students and colleagues to develop their own character especially in having empathy, integrity and resilience. Also in teaching, its important to have a continuous learning to stay effective and improving skills and teaching strategies to better serve the students and community.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+    
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    .worksheet-section {
+      background: #3f51b5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .worksheet-section h2 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .worksheet {
+      padding: 40px 20px;
+      padding: 40px 20px;
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-style: italic;
+    }
+
+    .worksheet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .worksheet-card {
+      background: white;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      max-width: 750px;
+      max-height: 750px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .worksheet-card img {
+      width: 650px;
+      height: auto;
+      display: block;
+    }
+
+    .worksheet-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+
+      .header-text h4 {
+        font-size: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .worksheet img {
+        max-width: 100%;
+      }
+
+      .worksheet-section h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+      <img src="Inerangan ES.png" alt="Right Logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="our_team.html">Our Team</a>
+    <a href="annotations.html">Annotations</a>
+    <a href="worksheet.html" class="active">Worksheets</a>
+    <a href="reflections.html">Reflections</a>
+  </nav>
+
+  <section class="worksheet-section">
+    <h2>Our Worksheets</h2>
+  </section>
+
+  <section class="worksheet">
+    <div class="worksheet-grid">
+      <a href="https://drive.google.com/drive/folders/1-7Fd6tiCqtedIRcm_dyIW7Oe4zEGJ_Ln" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic1.jpg" alt="worksheet1">
+        <div class="worksheet-text">
+          <h3>Teacher's Knowledge and Content Pedagogy</h3>
+        </div>
+      </div>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1-7s9hM_ZDH_hIPse8_-EgiQFoyBMnQcJ" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic2.jpg" alt="worksheet2">
+        <div class="worksheet-text">
+          <h3>My Ideal Learning Environment</h3>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+  <section class="worksheet" style="margin-top: -60px;">
+    <div class="worksheet-grid">
+      <a href="https://drive.google.com/drive/folders/1-Jzzbhi50grJWFBrV_wO2GqoiULyNASX" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic3.jpg" alt="worksheet5">
+        <div class="worksheet-text">
+          <h3>Distinctness of a Learner in a Diverse Classroom</h3>
+        </div>
+      </div>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1-N3yV4TrC2aowxkq9G-aLoWq1d_HTPQC" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic4.jpg" alt="worksheet6">
+        <div class="worksheet-text">
+          <h3>Observe Different Assessment in Online/Actual Class</h3>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+    <section class="worksheet" style="margin-top: -60px;">
+    <div class="worksheet-grid">
+      <a href="https://drive.google.com/drive/folders/1-R8XeitUV1rFmE0fXyGTYNEYPlylLcEx" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic5.jpg" alt="worksheet5">
+        <div class="worksheet-text">
+          <h3>Conduct an Online Interview with a principal/teacher</h3>
+        </div>
+      </div>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1-STmcuyp1h1enBgh2FSooTNsM-EQ-Zyw" target="_blank" style="text-decoration: none;">
+      <div class="worksheet-card">
+        <img src="worksheet-pic6.jpg" alt="worksheet6">
+        <div class="worksheet-text">
+          <h3>Review Sample K-12 Basic Education Curriculum</h3>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+</body>
+</html>

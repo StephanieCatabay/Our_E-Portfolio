@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    .about-section {
+      background: #3f51b5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .story-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 40px 20px;
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      gap: 20px;
+      justify-content: center;
+      color: #f0f0f0;
+    }
+
+    .story-section h3 {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    .story-section p {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .story-text2 {
+      max-width: 2000px;
+      color: rgb(0, 0, 0);
+      margin-top: 300px;
+    }
+
+    .story-text3 {
+      max-width: 2000px;
+      color: rgb(0, 0, 0);
+      margin-top: 150px;
+    }
+
+    .story-text2-BG {
+      background-image: url(BG3.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: black;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      width: 100%;
+      max-width: 2000px;
+      height: 900px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: -180px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+
+      .header-text h4 {
+        font-size: 20px;
+      }
+      
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .about-section h2 {
+        font-size: 36px;
+      }
+
+      .story-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .story-section h3 {
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .story-text2 p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -300px;
+      }
+
+      .story-text3 p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: -150px;
+      }
+
+      .story-text2-BG {
+        background-color: #f0f0f0;
+        opacity: 1;
+        max-width: 90%;
+        max-height: 100%;
+        height: fit-content;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+    <img src="Inerangan ES.png" alt="Right Logo">
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html" class="active">Introduction</a>
+    <a href="our_team.html">Our Team</a>
+    <a href="annotations.html">Annotations</a>
+    <a href="worksheet.html">Worksheets</a>
+    <a href="reflections.html">Reflections</a>
+  </nav>
+
+  <section class="about-section">
+    <h2>Our Field Study Journey</h2>
+  </section>
+  <section class="story-section">
+    <div class="story-text">
+      <h3>ACKNOWLEDGEMENT</h3>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="story-text2-BG">
+    <div class="story-text2">
+      <p>
+    We, the members of KAISA,would like to express our heartfelt gratitude to all the people who became part of our ongoing field study as practice teachers at Inerangan Elementary School. Our sincere thanks to our Cooperating Teachers, for their patience, support, and guidance throughout our teaching experiences. We also thank the School Principaland the whole Inerangan Elementary School community for welcoming us warmly and allowing us to learn and grow within their school. To our mentors and supervisorsfrom Pangasinan State University, thank you for your continuous encouragement and advice that shaped us into better future educators. Above all, we thank God Almighty for giving us wisdom, strength, and unity as we fulfill our duties as student-teachers.
+      </p>
+    </div>
+    </div>
+  </section>
+  <section class="story-section">
+    <div class="story-text">
+      <h3>INTRODUCTION</h3>
+    </div>
+  </section>
+  <section class="story-section">
+    <div class="story-text2-BG">
+    <div class="story-text3">
+      <p>
+    KAISArepresents a group of dedicated practice teachers deployed at Inerangan Elementary School, who work hand in hand to serve, teach, and learn with one goal—to make a positive difference in the lives of young learners.The group believes that teaching is not just about imparting knowledge but also about building connections, fostering teamwork, and growing together as future educators.Through cooperation, compassion, and commitment, KAISA stands as one—united in purpose, passion, and service to education.
+    This e-portfolio is a compilation of the effort, commitment, and perseverance we have made throughout our student teaching experiences. It holds the memories of late nights, tight deadlines, and the lessons we learned along the way.
+
+    In years to come, as we look back at this, may it remind us of our early steps in teaching and how far we've come. To the fellow student teachers Trisha, Stephanie, and Asher may we someday meet again, proud of what we've achieved and grateful for the memories we shared.
+
+    This e-portfolio represents our aspirations and potential as future teachers in addition to serving as a log of our development. It displays the enthusiasm and tenacity we possess as we get closer to becoming certified professionals who will motivate the following generation. Let us be reminded by this voyage that each obstacle we conquer strengthens us and better equips us for the journey ahead.
+      </p>
+    </div>
+    </div>
+  </section>
+</body>
+</html>

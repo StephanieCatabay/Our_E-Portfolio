@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .header-content img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    .our_team-section {
+      background: #3f51b5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .our_team-section h2 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .team-profile,
+    .team-pic{
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .team-profile img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .team-pic img {
+      max-width: 100%;
+      width: 1250px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+      
+      .header-text h4 {
+        font-size: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .our_team-section h2 {
+        font-size: 36px;
+      }
+
+      .team-profile img {
+        max-width: 95%;
+      }
+
+      .team-pic img {
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+      <img src="Inerangan ES.png" alt="Right Logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="our_team.html" class="active">Our Team</a>
+    <a href="annotations.html">Annotations</a>
+    <a href="worksheet.html">Worksheets</a>
+    <a href="reflections.html">Reflections</a>
+  </nav>
+
+  <section class="our_team-section">
+    <h2>Meet Our Team</h2>
+  </section>
+  <section class="team-pic">
+    <img src="Group_Pic.png" alt="Group_Pic's Photo">
+  </section>
+  <section class="team-profile">
+    <img src="Trisha Mae Magno.png" alt="Trisha's Photo">
+  </section>
+  <section class="team-profile">
+    <img src="Stephanie Catabay.png" alt="Stephanie's Photo">
+  </section>
+    <section class="team-profile">
+    <img src="Lyka Casiquin.png" alt="Lyka's Photo">
+  </section>
+    <section class="team-profile">
+    <img src="Asher Camaso.png" alt="Asher's Photo">
+  </section>
+</body>
+</html>

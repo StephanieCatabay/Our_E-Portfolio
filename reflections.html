@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangasinan State University</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #0052cc, #ffd633);
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      text-align: center;
+    }
+
+    header img {
+      width: 200px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-family: "Old English Text MT", serif;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-text h2 {
+      margin: 5px 0;
+      font-size: 26px;
+    }
+
+    .header-text h3 {
+      margin: 0;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .header-text h4 {
+      font-size: 50px;
+      font-family: "League Spartan", serif;
+      margin: 0px;
+    }
+    
+    nav {
+      background: #f0f0f0;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0052cc;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: 0.3s;
+      font-size: 24px;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .active {
+      color: #ff6600;
+    }
+
+    .reflection-section {
+      background: #3f51b5;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .reflection-section h2 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .team-profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      padding: 40px 20px;
+      background-image: url(PSU_Pic.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-size: 18px;
+      gap: 20px;
+      color: #f0f0f0;
+    }
+
+    .team-profile img {
+      width: 750px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .team-text {
+      max-width: 500px;
+    }
+
+    .team-text h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      margin-top: 10px;
+      background: #ffcc00;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img {
+        width: 80px;
+      }
+
+      .header-text h1 {
+        font-size: 28px;
+      }
+
+      .header-text h2 {
+        font-size: 18px;
+      }
+
+      .header-text h3 {
+        font-size: 16px;
+      }
+
+      .header-text h4 {
+        font-size: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .reflection-section h2 {
+        font-size: 32px;
+      }
+
+      .team-profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .team-profile img {
+        max-width: 100%;
+      }
+
+      .team-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Pangasinan_State_University_logo.png" alt="Left Logo">
+      <div class="header-text">
+        <h1>Pangasinan State University</h1>
+        <h2>Alaminos City Campus</h2>
+        <h3>College of Teacher Education</h3> <br><br>
+        <h4>INERANGAN ELEMENTARY SCHOOL</h4>
+      </div>
+      <img src="Inerangan ES.png" alt="Right Logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="our_team.html">Our Team</a>
+    <a href="annotations.html">Annotations</a>
+    <a href="worksheet.html">Worksheets</a>
+    <a href="reflections.html" class="active">Reflections</a>
+  </nav>
+
+  <section class="reflection-section">
+    <h2>Our Reflections</h2>
+  </section>
+
+  <section class="team-profile">
+    <img src="Trisha_Pic.png" alt="Trisha's Photo">
+    <div class="team-text">
+      <h3>Trisha Mae Magno</h3>
+      <button class="button"><a href="Trisha_Reflection.html" style="text-decoration: none;" target="_blank">Click Here.</a></button>
+    </div>
+  </section>
+
+  <section class="team-profile">
+    <img src="Stephanie_Pic.png" alt="Stephanie's Photo">
+    <div class="team-text" style="margin-right: -15px;">
+      <h3>Stephanie Catabay</h3>
+      <button class="button"><a href="Stephanie_Reflection.html" style="text-decoration: none;" target="_blank">Click Here.</a></button>
+    </div>
+  </section>
+
+  <section class="team-profile">
+    <img src="Lyka_Pic.png" alt="Lyka's Photo">
+    <div class="team-text" style="margin-right: 30px;">
+      <h3>Lyka Casiquin</h3>
+      <button class="button"><a href="Lyka_Reflection.html" style="text-decoration: none;" target="_blank">Click Here.</a></button>
+    </div>
+  </section>
+
+  <section class="team-profile">
+    <img src="Asher_Pic.png" alt="Asher's Photo">
+    <div class="team-text" style="margin-right: 20px;">
+      <h3>Asher Camaso</h3>
+      <button class="button"><a href="Asher_Reflection.html" style="text-decoration: none;" target="_blank">Click Here.</a></button>
+    </div>
+  </section>
+</body>
+</html>
